@@ -1,0 +1,14 @@
+name: FencesToTree
+version: 1.0.0
+main: com.swiftality.fencestotree.FencesToTreePlugin
+api-version: '1.21'
+description: Convert fences to trees with PDC data
+author: DeeHain
+
+permissions:
+  fencestotree.use:
+    description: Allow using the fencestotree command
+    default: op
+  fencestotree.admin:
+    description: Allow using admin commands (reload)
+    default: op

@@ -1,0 +1,151 @@
+# FencesToTree Configuration
+
+# Messages
+messages:
+  success-fullworld: "&aConverted {count} fences to trees in the entire world!"
+  success-area: "&aConverted {count} fences to trees in the selected area!"
+  invalid-usage: "&cUsage: /fencestotree <fullworld|area <x1> <y1> <z1> <x2> <y2> <z2>>"
+  invalid-coordinates: "&cInvalid coordinates provided!"
+  no-permission: "&cYou don't have permission to use this command!"
+
+# Axe break settings
+axe-break:
+  enabled: true
+  max-fences: 6  # Maximum number of connected fences that break when one is mined with an axe
+
+# Decay settings
+decay:
+  enabled: true
+  interval: 100  # Ticks (5 seconds - check every 5 seconds)
+  # Fences decay 1 minute (60000ms) after oak block connected to them is broken
+  use-separate-drops: true  # Use decay-drops config for decaying fences, otherwise use fence-drops
+
+# Fence types and their drops when broken by player
+# Format:
+# FENCE_TYPE:
+#   drops:
+#     - item: MATERIAL
+#       amount: 1
+#       chance: 100  # Optional, default is 100 (always drops)
+#
+fence-drops:
+  OAK_FENCE:
+    drops:
+      - item: OAK_PLANKS
+        amount: 1
+        chance: 100
+      - item: STICK
+        amount: 1
+        chance: 100
+      - item: APPLE
+        amount: 1
+        chance: 50
+  SPRUCE_FENCE:
+    drops:
+      - item: SPRUCE_PLANKS
+        amount: 1
+        chance: 100
+  BIRCH_FENCE:
+    drops:
+      - item: BIRCH_PLANKS
+        amount: 1
+        chance: 100
+  JUNGLE_FENCE:
+    drops:
+      - item: JUNGLE_PLANKS
+        amount: 1
+        chance: 100
+  ACACIA_FENCE:
+    drops:
+      - item: ACACIA_PLANKS
+        amount: 1
+        chance: 100
+  DARK_OAK_FENCE:
+    drops:
+      - item: DARK_OAK_PLANKS
+        amount: 1
+        chance: 100
+  MANGROVE_FENCE:
+    drops:
+      - item: MANGROVE_PLANKS
+        amount: 1
+        chance: 100
+  CHERRY_FENCE:
+    drops:
+      - item: CHERRY_PLANKS
+        amount: 1
+        chance: 100
+  BAMBOO_FENCE:
+    drops:
+      - item: BAMBOO_PLANKS
+        amount: 1
+        chance: 100
+  CRIMSON_FENCE:
+    drops:
+      - item: CRIMSON_PLANKS
+        amount: 1
+        chance: 100
+  WARPED_FENCE:
+    drops:
+      - item: WARPED_PLANKS
+        amount: 1
+        chance: 100
+
+# Fence drops when decayed automatically
+# If not specified, uses fence-drops config
+decay-drops:
+  OAK_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  SPRUCE_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  BIRCH_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  JUNGLE_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  ACACIA_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  DARK_OAK_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  MANGROVE_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  CHERRY_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  BAMBOO_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  CRIMSON_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
+  WARPED_FENCE:
+    drops:
+      - item: STICK
+        amount: 1
+        chance: 75
